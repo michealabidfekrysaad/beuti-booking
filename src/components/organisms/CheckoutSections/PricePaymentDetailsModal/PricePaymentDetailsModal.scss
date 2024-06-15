@@ -1,0 +1,136 @@
+@import "../../../../Sass/variables";
+@import "../../../../Sass/mixins";
+
+.price__payment {
+  .btn-close {
+    position: absolute;
+    background-size: 15px;
+    opacity: 1;
+    @include position(7%);
+    &:focus {
+      outline: unset !important;
+      box-shadow: unset !important;
+    }
+  }
+}
+
+.beuti-modal {
+  &_body {
+    &-data {
+      &_service {
+        font-weight: $font-semibold;
+        font-size: $b-lg-font;
+        color: $grey-900;
+      }
+      &_prices {
+        display: flex;
+        gap: 15px;
+        &-after_price {
+          font-weight: $font-semibold;
+          font-size: $h-xxs-font;
+          color: $grey-900;
+        }
+        &-before_price {
+          font-weight: $font-semibold;
+          font-size: $h-xxs-font;
+          color: $grey-600;
+        }
+      }
+    }
+    &-total {
+      border: 1px solid $grey-300;
+      border-radius: $radius-normal;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 22px;
+      gap: 5px;
+      margin-bottom: 10px;
+      &_label {
+        font-weight: $font-bold;
+        font-size: $b-lg-font;
+        color: #718096;
+      }
+      &_price {
+        font-weight: $font-bold;
+        font-size: 29px;
+        color: $main-normal;
+      }
+    }
+    &-online {
+      background: $grey-100;
+      border-radius: $radius-normal;
+      padding: 17px;
+      margin-bottom: 10px;
+      &_title {
+        font-weight: $font-bold;
+        font-size: $h-xs-font;
+        color: $grey-900;
+        margin-bottom: 5px;
+      }
+      &_sub--title {
+        font-weight: $font-regular;
+        font-size: $h-xs-font;
+        color: $grey-700;
+        letter-spacing: 0.3px;
+        margin-bottom: 10px;
+      }
+      &_data {
+        display: flex;
+        &-holder {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          &_img {
+            width: 47px;
+            height: 47px;
+            background: $white;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          &_info {
+            display: flex;
+            flex-direction: column;
+            &-name {
+              font-weight: $font-regular;
+              font-size: $b-sm-font;
+              color: #2c3a4b;
+            }
+            &-price {
+              font-weight: $font-semibold;
+              font-size: $b-md-font;
+              color: $grey-900;
+            }
+          }
+        }
+      }
+    }
+  }
+  &_footer {
+    &-one {
+      &-btn {
+        .special--btn {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          padding: 13px 20px;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+.alert-coupon {
+  padding: 17px;
+  background: rgba(234, 67, 53, 0.1);
+  font-weight: $font-regular;
+  font-size: $b-lg-font;
+  color: #ea4335;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: $radius-normal;
+}

@@ -1,0 +1,89 @@
+@import "./../../../Sass/variables";
+.beuti-btn {
+  border-radius: $radius-normal;
+  font-weight: $font-semibold;
+  padding: 0;
+}
+
+.btn-md {
+  width: $md-width;
+  height: $md-height;
+  font-size: $b-lg-font;
+}
+.btn-sm {
+  width: $sm-width;
+  height: $md-height;
+  font-size: $b-lg-font;
+}
+.btn-lg {
+  width: $lg-width;
+  height: $md-height;
+  font-size: $b-lg-font;
+}
+/* -------------------------------------------------------------------------- */
+/*                               Filled Buttons                               */
+/* -------------------------------------------------------------------------- */
+.primary-btn {
+  background-color: $main-normal;
+  border: 1px solid $main-normal;
+  color: $white;
+  &:hover {
+    background-color: $main-dark;
+    border: 1px solid $main-dark;
+  }
+  &:disabled {
+    background-color: $main-light;
+    border: 1px solid $main-light;
+    color: #fff;
+  }
+}
+.danger-btn {
+  background-color: $danger;
+  border: 1px solid $danger;
+  color: $white;
+  &:hover {
+    background-color: $danger-dark;
+    border: 1px solid $danger-dark;
+    color: $white;
+  }
+  &:disabled {
+    background-color: $danger-light;
+    border: 1px solid $danger-light;
+    color: $danger-dark;
+  }
+}
+.success-btn {
+  background-color: $success;
+  border: 1px solid $success;
+  color: $white;
+
+  &:hover {
+    background-color: $success-dark;
+    border: 1px solid $success-dark;
+    color: $white;
+  }
+  &:disabled {
+    background-color: $success-light;
+    border: 1px solid $success-light;
+    color: $success-dark;
+  }
+}
+.outline-btn {
+  background-color: $white;
+  border: 1px solid $grey-300;
+  color: $grey-700;
+
+  &:hover {
+    background-color: $main-light;
+    border: 1px solid $main-normal;
+    color: $main-normal;
+  }
+  &:disabled {
+    background-color: $white;
+    border: 1px solid $grey-300;
+    color: $grey-300;
+  }
+}
+/* -------------------------------------------------------------------------- */
+/*                               OutLined Button                              */
+/* -------------------------------------------------------------------------- */

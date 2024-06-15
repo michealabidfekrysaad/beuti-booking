@@ -1,0 +1,36 @@
+@import "./../../../Sass/variables";
+@import "./../../../Sass/mixins";
+
+.saveLabel {
+  border-radius: $radius-normal;
+  font-weight: $font-semibold;
+  padding: 0;
+  background-color: $main-normal;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-tag {
+    @include margin-end(10px);
+    svg {
+      width: 1.5rem;
+    }
+  }
+}
+
+.label-md {
+  font-size: 1.5rem;
+  padding: 0px 18px;
+  height: 30px;
+  max-width: 187px;
+}
+.label-sm {
+  font-size: 1.5rem;
+  padding: 0px 10px;
+  height: 30px;
+  max-width: 130px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               OutLined Button                              */
+/* -------------------------------------------------------------------------- */

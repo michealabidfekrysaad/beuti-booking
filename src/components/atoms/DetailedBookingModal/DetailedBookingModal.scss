@@ -1,0 +1,21 @@
+@import "../../../Sass/variables";
+
+.beuti-modal {
+  &_body {
+    &-title {
+      font-weight: $font-semibold;
+      font-size: $b-lg-font;
+      color: $grey-900;
+    }
+    &-desc {
+      margin-top: 5px;
+      padding: 8px 16px;
+      background: $grey-100;
+      border: 1px solid $grey-300;
+      border-radius: $radius-normal;
+      font-weight: $font-regular;
+      font-size: $b-lg-font;
+      color: $grey-700;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import "./../../../Sass/mediaQuery";
+@import "./../../../Sass/variables";
+
+.toggleservices {
+  background: #edf2f7;
+  border-radius: 40px;
+  display: flex;
+  width: 100%;
+  button {
+    border: none;
+    background: none;
+    height: 48px;
+    padding: 0 38px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #1a202c;
+    @include lt-sm {
+      padding: 0 13px;
+      font-size: $h-sm-font;
+    }
+  }
+  .active {
+    background-color: #a12b94;
+    color: #fff;
+  }
+}
+.toggleservices.singlelocation {
+  background: #fff;
+  button,
+  .active {
+    background: #fff;
+
+    padding: 0;
+    color: #a12b94;
+  }
+}

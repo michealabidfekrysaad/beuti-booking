@@ -1,0 +1,65 @@
+@import "../../../Sass/variables";
+
+.beuti-otp {
+  direction: ltr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__item {
+    max-width: 60px;
+    height: 60px;
+    margin: 0 10px;
+    input {
+      width: 100% !important;
+      height: 100%;
+      font-size: 30px;
+      font-weight: 700;
+      border: 1px solid rgba(151, 151, 151, 0.28);
+      border-radius: 6px;
+      &:focus {
+        // box-shadow: 0px 0.892501px 15.8943px rgba(0, 0, 0, 0.1);
+        border: 1px solid $main-normal;
+        outline: none;
+      }
+    }
+  }
+  &__timer {
+    display: flex;
+    align-items: center;
+    color: $main-normal;
+    &-button {
+      border: none;
+      color: $main-normal;
+      width: 100%;
+      //   padding: 20px;
+      height: 48px;
+      background: #f6eaf4;
+      border-radius: 6px;
+      font-weight: $font-bold;
+      font-size: $b-lg-font;
+      &:disabled {
+        // color: $grey-600 !important;
+      }
+    }
+  }
+  &__no-timer {
+    display: flex;
+    align-items: center;
+    color: $main-normal;
+    &-button {
+      border: none;
+      color: $main-normal;
+      width: 50%;
+      margin: auto;
+      padding: 5px;
+      background: unset;
+      border-radius: 6px;
+      font-weight: $font-bold;
+      font-size: $b-lg-font;
+    }
+  }
+}
+
+.beuti-otp .beuti-otp__item input {
+  text-align: center !important;
+}

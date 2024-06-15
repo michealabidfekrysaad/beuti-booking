@@ -1,0 +1,112 @@
+@import "../../../../Sass/variables";
+
+.voucher-holder {
+  display: flex;
+  overflow: auto;
+  margin: 15px 0px;
+  padding: 5px 0px;
+  .voucher--btn {
+    border: unset;
+    border-radius: 11px;
+    background: unset;
+    padding: 12px;
+    &_colored--card--shape {
+      min-width: 235px;
+      height: 160px;
+      opacity: 0.8;
+      border-radius: 11px;
+      position: relative;
+      &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-color: $white;
+        border-radius: 50%;
+        top: 60%;
+        right: -12px;
+      }
+      &::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-color: $white;
+        border-radius: 50%;
+        top: 60%;
+        left: -12px;
+      }
+      .hr {
+        width: 100%;
+        position: absolute;
+        top: 58%;
+        left: 5px;
+        right: 5px;
+        color: white;
+        max-height: 15px;
+        overflow: hidden;
+      }
+      .data {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        right: 10%;
+        width: fit-content;
+        text-align: initial;
+        &-price {
+          font-weight: $font-bold;
+          font-size: $h-lg-font;
+          color: $white;
+        }
+        &-salon--name {
+          font-weight: $font-medium;
+          font-size: $b-xs-font;
+          color: $white;
+        }
+      }
+      .valid {
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        right: 10%;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        &-thru {
+          font-weight: 400;
+          font-size: 8px;
+          color: $white;
+        }
+        &-date {
+          font-weight: 500;
+          font-size: 15px;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+.customize {
+  text-align: center;
+  font-size: $h-xxs-font;
+}
+.default-color {
+  background: $main-normal !important;
+  &_selected {
+    border: 1px solid $main-normal !important;
+  }
+}
+.blue-color {
+  background: #a3e1dc !important;
+  &_selected {
+    border: 1px solid #a3e1dc !important;
+  }
+}
+.orange-color {
+  background: #ffcdb6 !important;
+  &_selected {
+    border: 1px solid #ffcdb6 !important;
+  }
+}

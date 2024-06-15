@@ -1,0 +1,13 @@
+@import "./../../../Sass/variables";
+
+.timesquare {
+  background-color: $grey-100;
+  color: $grey-900;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: $radius-normal;
+  font-weight: $font-semibold;
+}

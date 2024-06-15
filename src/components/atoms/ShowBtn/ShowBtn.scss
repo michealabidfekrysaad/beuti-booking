@@ -1,0 +1,18 @@
+@import "./../../../Sass/variables";
+
+.show-holder {
+  background-color: $main-light;
+  color: $main-normal;
+  border: none;
+  outline: none;
+  min-width: 76px;
+  padding: 0px 5px;
+  height: 25px;
+  font-size: $h-xxs-font;
+  border-radius: $radius-twenty-eight;
+  font-weight: $font-medium;
+  &:hover {
+    opacity: 0.8;
+    color: $main-dark;
+  }
+}

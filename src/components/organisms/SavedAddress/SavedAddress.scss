@@ -1,0 +1,37 @@
+@import "./../../../Sass/variables";
+@import "./../../../Sass/mediaQuery";
+
+.savedaddress {
+  &-header {
+    font-size: $h-sm-font;
+    color: $grey-900;
+    font-weight: $font-bold;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    @include lt-md {
+      margin-bottom: 16px;
+    }
+  }
+}
+.nosavedaddress {
+  flex-direction: column;
+  margin-top: 70px;
+  justify-content: center;
+  align-items: center;
+  &-header {
+    font-size: $h-sm-font;
+    color: $grey-900;
+    font-weight: $font-bold;
+    margin-bottom: 12px;
+  }
+  &-description {
+    font-size: $b-lg-font;
+    color: $grey-700;
+    font-weight: $font-regular;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+  }
+}

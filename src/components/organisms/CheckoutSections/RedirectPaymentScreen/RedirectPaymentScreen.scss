@@ -1,0 +1,33 @@
+@import "../../../../Sass/variables";
+
+.redirect {
+  min-height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  &-spinner {
+    color: $main-normal;
+  }
+  .spinner-border {
+    width: 6rem !important;
+    height: 6rem !important;
+    border-right-width: 0.7em;
+    border-top-width: 0.7em;
+    border-bottom-width: 0.7em;
+    border-left-width: 0.7em;
+  }
+  &-title {
+    font-weight: $font-bold;
+    font-size: $h-md-font;
+    color: $grey-900;
+    margin-top: 10px;
+  }
+  &-sub--title {
+    font-weight: $font-medium;
+    font-size: $b-lg-font;
+    color: $grey-700;
+    margin-bottom: 10px;
+  }
+}

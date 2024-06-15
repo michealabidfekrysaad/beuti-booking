@@ -1,0 +1,23 @@
+@import "./../../../Sass/variables";
+
+.alert-beuti {
+  position: relative;
+  padding: 17px;
+  margin-bottom: 16px;
+  border: 1px solid transparent;
+  border-radius: $radius-normal;
+  font-weight: $font-regular;
+  font-size: $b-lg-font;
+}
+
+.alert-danger {
+  color: #ea4335;
+  background-color: rgba(234, 67, 53, 0.1);
+  //   font-weight: $font-regular;
+  //   font-size: $b-lg-font;
+}
+
+.alert-primary {
+  color: #084298;
+  background-color: #cfe2ff;
+}

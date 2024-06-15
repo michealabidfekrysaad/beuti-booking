@@ -1,0 +1,146 @@
+@import "../../../Sass/variables";
+@import "../../../Sass/mediaQuery";
+
+.margin {
+  margin: 8px 0px;
+}
+.box {
+  padding: 25px;
+  background: #fff;
+  border: 1px solid #cbd5e0;
+  border-radius: 12px;
+  @include lt-sm {
+    padding: 18px;
+  }
+  &-title {
+    font-weight: $font-bold;
+    font-size: $h-md-font;
+    color: $grey-900;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include lt-md {
+      font-size: $h-sm-font;
+    }
+    &_btn {
+      background-color: unset !important;
+      color: $main-normal;
+      width: auto !important;
+      border: unset !important;
+      font-weight: $font-bold;
+      font-size: $b-lg-font;
+    }
+  }
+  &-sub--title {
+    font-weight: $font-regular;
+    font-size: $b-lg-font;
+    color: $grey-700;
+    @include lt-md {
+      font-size: $b-md-font;
+    }
+  }
+  &-data {
+    border: 0.9px solid #cbd5e0;
+    border-radius: 10px;
+    margin: 10px 0px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+    @include lt-sm {
+      padding: 8px;
+    }
+    .beuti-input {
+      margin: 0px;
+      border: none;
+    }
+    &_holder {
+      width: 75%;
+      &-input {
+        border: none;
+      }
+      p.beuti-input__errormsg {
+        bottom: -42px !important;
+      }
+    }
+    &_first {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      @include lt-sm {
+        gap: 5px;
+      }
+      &-card--data {
+        display: flex;
+        flex-direction: column;
+        font-weight: $font-semibold;
+        font-size: $b-lg-font;
+        color: #718096;
+        .dot {
+          height: 0.8rem;
+          width: 0.8rem;
+          background-color: black;
+          border-radius: 50%;
+          display: inline-block;
+          margin: 0px 0.8px;
+        }
+      }
+      &-wallet {
+        font-weight: $font-semibold;
+        font-size: $b-lg-font;
+        color: $grey-900;
+      }
+      &-balance {
+        font-weight: $font-semibold;
+        font-size: $b-lg-font;
+        color: #24a148;
+      }
+    }
+    &_second {
+      input {
+        max-width: 140px;
+        @include lt-md {
+          max-width: 75px;
+        }
+      }
+    }
+  }
+  &-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    background: #f7fafc;
+    border-radius: $radius-normal;
+    font-weight: $font-regular;
+    font-size: $b-lg-font;
+    color: $grey-700;
+    &_price {
+      color: #6cd86b;
+      font-weight: $font-semibold;
+      padding: 0px 3px;
+    }
+  }
+}
+
+.cancelation {
+  display: flex;
+  gap: 5px;
+  padding: 18px;
+  background: #f7fafc;
+  border-radius: $radius-normal;
+  font-weight: $font-regular;
+  font-size: $b-lg-font;
+  color: $grey-700;
+  &-policy {
+    font-weight: $font-bold;
+    font-size: $h-sm-font;
+    color: $grey-900;
+  }
+  &-info {
+    font-weight: $font-regular;
+    font-size: $b-md-font;
+    color: $grey-600;
+  }
+}

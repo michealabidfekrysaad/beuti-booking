@@ -1,0 +1,40 @@
+@import "./../../../Sass/variables";
+@import "./../../../Sass/mixins";
+
+.remaningDays {
+  border-radius: $radius-normal;
+  font-weight: $font-semibold;
+  padding: 0;
+  background-color: $grey-100;
+  color: $grey-900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: $b-lg-font;
+  &-tag {
+    @include margin-end(5px);
+    svg {
+      width: 1.5rem;
+    }
+  }
+}
+
+.remaning-md {
+  font-size: 1.5rem;
+  padding: 0px 12px;
+  height: 30px;
+  max-width: 195px;
+}
+.remaning-sm {
+  font-size: 1.5rem;
+  padding: 0px 10px;
+  height: 30px;
+  max-width: 195px;
+}
+
+.remaningDays.dark {
+  background-color: $grey-300;
+}
+/* -------------------------------------------------------------------------- */
+/*                               OutLined Button                              */
+/* -------------------------------------------------------------------------- */

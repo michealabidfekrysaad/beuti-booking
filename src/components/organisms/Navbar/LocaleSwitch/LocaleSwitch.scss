@@ -1,0 +1,51 @@
+@import "../../../../Sass/variables";
+
+.select-language-icon {
+  padding: 10px !important;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-weight: $font-medium;
+  font-size: $b-lg-font;
+  color: $grey-900;
+
+  .icon {
+    svg {
+      width: 19px;
+      height: 13px;
+      border-radius: 6px;
+    }
+  }
+  .arrow {
+    svg {
+      width: 10px;
+      height: 6px;
+      border-radius: 6px;
+    }
+  }
+}
+
+ul.MuiList-root.MuiList-padding.MuiMenu-list.css-6hp17o-MuiList-root-MuiMenu-list {
+  li {
+    font-weight: $font-medium;
+    font-size: $b-sm-font;
+    color: $grey-900;
+  }
+}
+.select-language {
+  .MuiSelect-select.MuiSelect-select {
+    padding: 0 !important;
+  }
+  .MuiInputBase-input.MuiInput-input:focus {
+    box-shadow: none !important;
+    border-color: none;
+  }
+  .MuiInputBase-input.MuiInput-input {
+    border: unset !important;
+    border-radius: 9px;
+  }
+  .css-1d3z3hw-MuiOutlinedInput-notchedOutline,
+  .MuiOutlinedInput-notchedOutline {
+    border: unset !important;
+  }
+}

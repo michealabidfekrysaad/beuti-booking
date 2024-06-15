@@ -1,0 +1,64 @@
+@import "./../../../Sass/variables";
+@import "./../../../Sass/mixins";
+.serviceitem {
+  justify-content: space-between;
+  cursor: pointer;
+  &-title {
+    display: flex;
+    &_name {
+      margin: 0 12px;
+    }
+  }
+  &-description {
+    @include padding-start(61px);
+    color: $grey-700;
+    font-weight: $font-regular;
+    font-size: $b-lg-font;
+    margin-bottom: 14px;
+  }
+  &-offertime {
+    @include padding-start(61px);
+    &_bookcompanion {
+      padding-top: 24px;
+      margin-top: 10px;
+      &-btn {
+        background-color: unset;
+        text-decoration: underline;
+        border: unset;
+        outline: unset;
+        color: $grey-900;
+        font-weight: $font-semibold;
+        font-size: $b-lg-font;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+  &-package {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 52px;
+    &__item {
+      background: $grey-100;
+      @include margin-end(5px);
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: $b-md-font;
+      color: $grey-900;
+      margin-bottom: 2px;
+      font-weight: $font-medium;
+      &-dash {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.serviceitem-wrapper {
+  overflow: hidden;
+  border-radius: $radius-normal;
+  border: 1px solid $grey-300;
+  padding: 20px;
+  width: 100%;
+}

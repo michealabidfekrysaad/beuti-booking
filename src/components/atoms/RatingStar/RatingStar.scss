@@ -1,0 +1,21 @@
+@import "./../../../Sass/variables";
+
+// to fix postion of yellow star over original star
+.css-dqr9h-MuiRating-label {
+  top: 3px;
+}
+.css-ryrseu-MuiRating-root {
+  font-size: 2rem !important;
+}
+.stars-holder {
+  display: flex;
+  align-items: center;
+  &_num {
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+    // padding-bottom: 0.25rem !important;
+    color: $grey-900;
+    font-weight: $font-semibold;
+    font-size: $b-lg-font;
+  }
+}

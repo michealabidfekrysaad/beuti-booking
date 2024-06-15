@@ -1,0 +1,27 @@
+@import "../../../Sass/variables";
+
+.emp {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  &-data {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    &_title {
+      font-weight: $font-semibold;
+      font-size: $b-lg-font;
+      color: $grey-900;
+    }
+    &_sub--title {
+      font-weight: $font-regular;
+      font-size: $b-md-font;
+      color: $grey-700;
+      min-height: 25%;
+    }
+  }
+  // &-rate {
+  //   padding-top: 7px;
+  // }
+}

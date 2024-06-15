@@ -1,0 +1,146 @@
+@import "./Sass/variables";
+@import "./Sass/tooltip";
+@import "./Sass/mediaQuery";
+@import "./Sass/beutiModal";
+@import "./Sass/toggle";
+@import "./Sass/toastify";
+html:lang(ar) {
+  overflow-x: hidden;
+}
+:root {
+  font-size: 62.5%;
+  @include lt-md {
+    font-size: 50%;
+  }
+}
+*,
+::after,
+::before {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+.App {
+  font-size: 1.6rem;
+}
+body[dir="rtl"] {
+  *,
+  ::after,
+  ::before {
+    font-family: "Cairo", sans-serif;
+  }
+}
+.container-fluid {
+  width: calc(100% - 106px) !important;
+  @include lt-xl {
+    width: calc(100% - 40px) !important;
+  }
+  @include lt-sm {
+    width: calc(100% - 0px) !important;
+  }
+}
+.viewstepper {
+  @include lt-xl {
+    padding: 15px 37px !important;
+  }
+  @include lt-sm {
+    padding: 10px 8px !important;
+  }
+}
+.views {
+  margin-bottom: 65px;
+  position: relative;
+  //   relative position for BookingConfirmed
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #dcdcdc;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a1a1a1;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #727272;
+}
+
+input.check-color {
+  accent-color: #a12b94;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.loading {
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    background-color: #ffffff6e;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: text-bottom;
+    border: 0.25em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: 0.75s linear infinite spinner-border;
+    animation: 0.75s linear infinite spinner-border;
+    position: absolute;
+    z-index: 2;
+    color: #a82f96;
+    left: 43%;
+    top: 43%;
+  }
+}
+.Toastify__toast-icon.Toastify--animate-icon.Toastify__zoom-enter {
+  display: none !important;
+}
+.pointer {
+  cursor: pointer;
+}
+
+.seperator-hr {
+  border-top: 1px solid #e2e8f0;
+}
+.current-step {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 14px;
+  letter-spacing: 0.2px;
+  color: #718096;
+}
+
+.viewstepper {
+  &_name {
+    margin-bottom: 0px;
+    button {
+      background: none;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+    // svg {
+    //   @include margin-end(8px);
+    // }
+  }
+}

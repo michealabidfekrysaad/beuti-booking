@@ -1,0 +1,189 @@
+@import "../../../Sass/variables";
+@import "../../../Sass/mediaQuery";
+@import "../../../Sass/mixins";
+
+.footer-invoice {
+  position: fixed;
+  bottom: 60px;
+  left: 0px;
+  right: 0px;
+  min-height: 63px;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  padding: 0px;
+  &_collapse {
+    min-width: 100%;
+    max-height: 335px;
+    overflow: hidden auto;
+    z-index: 1000;
+    &::-webkit-scrollbar-thumb {
+      background-color: $grey-600;
+    }
+    &-accordion {
+      min-width: 100%;
+      &_item {
+        border: unset;
+        background: #ffffff;
+        &-header {
+          button {
+            min-height: 70px;
+            padding: 24px 70px;
+            font-weight: $font-bold;
+            font-size: $h-sm-font;
+            color: $grey-900;
+            display: flex;
+            justify-content: space-between;
+
+            &::after {
+              content: "\02C4";
+              background-image: unset;
+              margin: unset;
+            }
+          }
+          button:focus {
+            box-shadow: unset;
+            outline: unset;
+          }
+          .accordion-button:not(.collapsed) {
+            color: unset;
+            background-color: unset;
+            box-shadow: unset;
+            &::after {
+              transform: rotate(-180deg);
+              background-image: unset;
+              font-weight: 700;
+            }
+          }
+        }
+        &-body {
+          padding: 0px 70px 0px 70px;
+          &:focus {
+            border-top: none !important;
+          }
+          &-summary {
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &_dahsed {
+              padding-bottom: 24px;
+              border-top: 1px dashed $grey-300;
+              width: 100%;
+            }
+            &_title {
+              font-weight: $font-semibold;
+              font-size: $b-lg-font;
+              color: $grey-900;
+              padding-bottom: 24px;
+            }
+            &_service {
+              display: flex;
+              justify-content: space-between;
+              padding-bottom: 24px;
+              &-info {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                &_name {
+                  font-weight: $font-medium;
+                  font-size: $b-md-font;
+                  color: $grey-900;
+                }
+                &_details {
+                  font-weight: $font-regular;
+                  font-size: $b-md-font;
+                  color: $grey-700;
+                }
+              }
+              &-price {
+                font-weight: $font-medium;
+                font-size: $b-md-font;
+                color: $grey-900;
+                min-width: 25%;
+                display: flex;
+                justify-content: flex-end;
+                &_dashed {
+                  text-decoration: line-through;
+                  padding: 0 10px;
+                  font-weight: $font-medium;
+                  font-size: $b-md-font;
+                  color: $grey-600;
+                }
+              }
+            }
+          }
+          &_vat {
+            padding-bottom: 24px;
+            &-section {
+              min-height: 29px;
+              background: #f7fafc;
+              text-align: center;
+              padding: 5px;
+              font-weight: 600;
+              font-size: 14px;
+              color: #4a5568;
+            }
+          }
+        }
+      }
+    }
+  }
+  &_payment-type {
+    background-color: #f7fafc;
+    padding: 24px 70px;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    &-price {
+      color: $main-normal;
+    }
+  }
+}
+
+@include sm {
+  .footer-invoice {
+    &_collapse {
+      max-height: 300px;
+      &-accordion {
+        &_item {
+          &-header {
+            button {
+              padding: 24px 50px;
+            }
+          }
+          &-body {
+            padding: 0px 50px 0px 50px;
+          }
+        }
+      }
+    }
+    &_payment-type {
+      padding: 24px 50px;
+    }
+  }
+}
+@include lt-sm {
+  .footer-invoice {
+    &_collapse {
+      max-height: 250px;
+      &-accordion {
+        &_item {
+          &-header {
+            button {
+              padding: 15px 20px;
+              font-size: $h-xs-font;
+              min-height: 65px;
+            }
+          }
+          &-body {
+            padding: 0px 20px 0px 20px;
+          }
+        }
+      }
+    }
+    &_payment-type {
+      padding: 0px 20px;
+    }
+  }
+}

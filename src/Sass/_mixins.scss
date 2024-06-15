@@ -1,0 +1,40 @@
+@mixin padding-start($size) {
+  &:lang(ar) {
+    padding-right: $size;
+  }
+  &:lang(en) {
+    padding-left: $size;
+  }
+}
+@mixin padding-end($size) {
+  &:lang(ar) {
+    padding-left: $size;
+  }
+  &:lang(en) {
+    padding-right: $size;
+  }
+}
+@mixin margin-start($size) {
+  &:lang(ar) {
+    margin-right: $size;
+  }
+  &:lang(en) {
+    margin-left: $size;
+  }
+}
+@mixin margin-end($size) {
+  &:lang(ar) {
+    margin-left: $size;
+  }
+  &:lang(en) {
+    margin-right: $size;
+  }
+}
+@mixin position($size) {
+  &:lang(ar) {
+    left: $size;
+  }
+  &:lang(en) {
+    right: $size;
+  }
+}

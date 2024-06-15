@@ -1,0 +1,31 @@
+@import "../../../Sass/variables";
+
+.beuti-modal {
+  &_body {
+    &-data {
+      margin-top: 5px;
+      padding: 8px 16px;
+      background: $grey-100;
+      border-radius: $radius-normal;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 55px;
+      &_city {
+        font-weight: $font-semibold;
+        font-size: $b-lg-font;
+        color: $grey-900;
+      }
+      &_has-price {
+        font-weight: $font-bold;
+        font-size: $b-lg-font;
+        color: $main-normal;
+      }
+      &_no-price {
+        font-weight: $font-bold;
+        font-size: $b-lg-font;
+        color: $grey-500;
+      }
+    }
+  }
+}

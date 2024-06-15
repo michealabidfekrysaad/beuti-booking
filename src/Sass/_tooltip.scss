@@ -1,0 +1,15 @@
+@import "./variables";
+
+.MuiTooltip-popper {
+  .css-1k51tf5-MuiTooltip-tooltip {
+    background-color: $grey-300 !important;
+    color: black !important;
+    max-width: 150px;
+    font-size: $b-sm-font;
+    text-align: center;
+    box-shadow: 1px 1px 2px 1px $grey-100;
+  }
+  .css-kudwh-MuiTooltip-arrow::before {
+    background-color: $grey-300 !important;
+  }
+}

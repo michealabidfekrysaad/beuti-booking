@@ -1,0 +1,18 @@
+@import "./../../../Sass/variables";
+.newaddress-form {
+  &__notsupported {
+    background: #f7fafc;
+    border-radius: 13px;
+    padding: 20px;
+    margin-bottom: 16px;
+    color: $grey-900;
+    &-city {
+      border: none;
+      background: none;
+      color: $main-normal;
+      text-decoration: underline;
+      font-weight: $font-bold;
+      margin: 0px 4px;
+    }
+  }
+}

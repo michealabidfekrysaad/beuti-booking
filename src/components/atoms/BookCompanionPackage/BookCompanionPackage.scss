@@ -1,0 +1,142 @@
+@import "../../../Sass/variables";
+@import "../../../Sass/mediaQuery";
+
+.beuti-modal {
+  &_body {
+    &-label {
+      font-weight: $font-semibold !important;
+      font-size: $b-lg-font !important;
+      color: $grey-900 !important;
+    }
+    &-compainion-place {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    &-data {
+      margin-top: 5px;
+      padding: 8px 16px;
+      background: $grey-100;
+      border-radius: $radius-normal;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 55px;
+      &_city {
+        font-weight: $font-semibold;
+        font-size: $b-lg-font;
+        color: $grey-900;
+      }
+      &_has-price {
+        font-weight: $font-bold;
+        font-size: $b-lg-font;
+        color: $main-normal;
+      }
+      &_no-price {
+        font-weight: $font-bold;
+        font-size: $b-lg-font;
+        color: $grey-500;
+      }
+    }
+    &-label-assign {
+      margin: 0px 10px;
+      font-weight: $font-semibold;
+      font-size: $b-md-font;
+      color: $grey-600;
+      cursor: pointer;
+    }
+    &-pack-details {
+      background-color: $grey-100;
+      margin: 8px 0px;
+      padding: 11px;
+      border-radius: 6px;
+      &_service {
+        font-weight: $font-medium;
+        font-size: $b-sm-font;
+        color: $grey-900;
+      }
+      &_companion {
+        display: flex;
+        justify-content: flex-end;
+        .container-circles {
+          margin-right: 0px !important;
+        }
+        &-drop-down {
+          button.dropdown-toggle {
+            background-color: unset !important;
+            font-size: 1.2rem;
+            font-weight: 600;
+            width: 30px;
+            height: 30px;
+            padding: 0px;
+            border-radius: 50%;
+            border: unset;
+            &::after {
+              display: none;
+            }
+            &:hover {
+              background-color: unset;
+            }
+            &:focus {
+              background-color: transparent !important;
+              box-shadow: unset !important;
+            }
+          }
+          &_menu {
+            background: #ffffff;
+            box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0px 4px 6px -2px rgba(0, 0, 0, 0.05),
+              0px 0px 0px 1px rgba(0, 0, 0, 0.05);
+            border-radius: 6px;
+            padding: 10px;
+            max-height: 100px;
+            overflow: hidden scroll;
+            .beuti-input {
+              margin: 0px 0px 10px 0px !important;
+              input {
+                height: 30px;
+                width: 160px;
+              }
+              .beuti-input__errormsg {
+                font-size: 9px;
+              }
+            }
+            button.dropdown-item {
+              text-align: start;
+              height: 36px;
+              font-weight: 400;
+              font-size: 12px;
+              &:hover {
+                background-color: $grey-100 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include lt-md {
+  .beuti-modal {
+    div.modal-content {
+      width: 90% !important;
+      margin: auto;
+      min-width: unset !important;
+    }
+    &_header {
+      &-title {
+        font-size: $h-sm-font;
+      }
+      &-sub-title {
+        font-size: $b-sm-font;
+      }
+    }
+    &_body {
+      max-height: 400px;
+      .mb-md {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

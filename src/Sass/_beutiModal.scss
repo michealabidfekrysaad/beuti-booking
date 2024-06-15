@@ -1,0 +1,95 @@
+@import "../Sass/variables";
+@import "../Sass/mediaQuery";
+
+.modal-backdrop {
+  width: 100% !important;
+  height: 100% !important;
+}
+.beuti-modal {
+  div.modal-content {
+    background: $white;
+    box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-radius: $radius-normal;
+    padding: 24px 12px;
+    min-width: 525px !important;
+  }
+  //   heading of beuti-modal
+  &_header {
+    padding: 0px 12px !important;
+    margin: 10px 0px 0px 0px !important;
+    border-bottom: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    &-title {
+      font-weight: $font-bold;
+      font-size: 22px;
+      color: $grey-900;
+    }
+    &-sub-title {
+      font-weight: $font-medium;
+      font-size: 16px;
+      color: $grey-700;
+    }
+  }
+  //   body of beuti-modal
+  &_body {
+    padding: 0px 12px !important;
+    margin: 13px 0px 0px 0px !important;
+    border-bottom: none !important;
+    max-height: 500px;
+    min-height: 100px;
+    overflow: hidden auto;
+  }
+  //   footer of beuti-modal
+  //   put className w-100 for btn
+  &_footer-one-btn {
+    padding: 0px 12px !important;
+    margin: 20px 0px 0px 0px;
+    border-top: none !important;
+    display: flex;
+    justify-content: center !important;
+    button {
+      margin: 0px !important;
+      min-width: 50%;
+    }
+  }
+  //   remove className w-100 from btn
+  &_footer-two-btn {
+    padding: 0px 12px !important;
+    margin: 20px 0px 0px 0px;
+    border-top: none !important;
+    display: flex;
+    justify-content: space-between !important;
+    button {
+      margin: 0px !important;
+      min-width: 49%;
+      max-width: 49%;
+    }
+  }
+}
+
+@include lt-md {
+  .beuti-modal {
+    div.modal-content {
+      width: 90% !important;
+      margin: auto;
+      min-width: unset !important;
+    }
+    &_header {
+      &-title {
+        font-size: $h-sm-font;
+      }
+      &-sub-title {
+        font-size: $b-sm-font;
+      }
+    }
+    &_body {
+      max-height: 400px;
+    }
+  }
+}

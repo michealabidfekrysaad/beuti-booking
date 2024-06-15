@@ -1,0 +1,15 @@
+@import "./../../../Sass/variables";
+.servicenametime {
+  &-name {
+    color: $grey-900;
+    font-weight: $font-semibold;
+    margin-bottom: 5px;
+    font-size: $b-lg-font;
+  }
+  &-time {
+    color: $grey-600;
+    font-size: $b-lg-font;
+    font-weight: $font-medium;
+    margin-bottom: 0.5rem;
+  }
+}

@@ -1,0 +1,25 @@
+@import "../../../Sass/variables";
+
+.emp--holder:first-child {
+  margin: 0px 0px;
+}
+.emp--holder {
+  padding: 24px;
+  background: $white;
+  border: 1px solid #edf2f7;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0px;
+  &-price--section {
+    display: flex;
+    gap: 50px;
+    &_price {
+      font-weight: $font-medium;
+      font-size: 1.6rem;
+      color: $grey-900;
+    }
+  }
+}

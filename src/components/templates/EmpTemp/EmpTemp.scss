@@ -1,0 +1,13 @@
+@import "./../../../Sass/variables";
+.employees {
+  margin-top: 230px;
+  &-header {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: $h-sm-font;
+    color: #191632;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}

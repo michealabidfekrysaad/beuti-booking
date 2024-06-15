@@ -1,0 +1,30 @@
+@import "../../../../Sass/variables";
+@import "../../../../Sass/mediaQuery";
+
+.data {
+  @include xs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0px !important;
+    border-top: 1px solid $grey-300;
+    border-bottom: 1px solid $grey-300;
+  }
+  &-date {
+    font-weight: $font-semibold;
+    font-size: $b-lg-font;
+    color: $grey-900;
+    display: flex;
+    gap: 5px;
+    p {
+      margin-bottom: 0px;
+      direction: ltr;
+    }
+  }
+  &-duration {
+    font-weight: $font-regular;
+    font-size: $b-md-font;
+    color: $grey-600;
+  }
+}

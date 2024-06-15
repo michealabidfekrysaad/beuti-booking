@@ -1,0 +1,376 @@
+@import "../../../Sass/variables";
+@import "../../../Sass/mixins";
+@import "../../../Sass/mediaQuery";
+
+.picker {
+  background: $white;
+  box-shadow: 0px 10px 30px rgba(46, 58, 89, 0.05);
+  border-radius: 16px;
+  padding: 20px 18px;
+}
+
+.css-1brzq0m {
+  max-height: unset !important;
+}
+.css-epd502 {
+  width: 100% !important;
+  .MuiCalendarPicker-root.css-169iwlq-MuiCalendarPicker-root {
+    width: 100% !important;
+  }
+}
+
+.css-18j49sp,
+.css-1cnkspq {
+  min-height: 300px !important;
+  overflow: hidden !important;
+}
+
+.css-1wvgxus-MuiCalendarPicker-viewTransitionContainer {
+  overflow: hidden;
+}
+//   the year numbers selection
+.css-m1gykc {
+  font-weight: $font-semibold;
+  font-size: $b-lg-font;
+  color: #494e50;
+}
+.css-m1gykc.Mui-selected {
+  color: $white !important;
+  background: $main-normal !important;
+  border-radius: $radius-normal !important;
+}
+
+span.MuiTypography-root.MuiTypography-caption.css-1w13o7u-MuiTypography-root {
+  font-weight: $font-medium;
+  font-size: $b-lg-font;
+  letter-spacing: 0.3px;
+  color: #4a5568;
+  width: 5rem !important;
+  height: 4rem !important;
+}
+
+.css-1n2mv2k {
+  // for the days name
+  justify-content: space-between !important;
+}
+.css-qklzlb-MuiDayPicker-header {
+  justify-content: space-between !important;
+}
+
+button.MuiButtonBase-root.MuiIconButton-root {
+  svg {
+    font-size: $h-xlg-font !important;
+  }
+}
+// style for the month
+.css-l0iinn {
+  font-weight: $font-bold !important;
+  font-size: $h-sm-font !important;
+  letter-spacing: 0.3px !important;
+  color: $grey-900 !important;
+  @include margin-end(auto);
+  @include margin-start(unset);
+  //   arrow beside the month name
+}
+.MuiPickersCalendarHeader-labelContainer {
+  font-weight: $font-bold !important;
+  font-size: $h-sm-font !important;
+  letter-spacing: 0.3px !important;
+  color: $grey-900 !important;
+  @include margin-end(auto);
+  @include margin-start(unset);
+}
+
+//   padding for month and arrows
+.css-1dozdou {
+  padding-right: 8px !important;
+  @include lt-md {
+    padding: 0px !important;
+  }
+  // arrows for change the month
+  .MuiPickersArrowSwitcher-root {
+    button.MuiButtonBase-root.MuiIconButton-root {
+      svg {
+        font-size: $h-xlg-font !important;
+      }
+    }
+  }
+}
+.css-mvmu1r {
+  // for the days  numbers
+  justify-content: space-between !important;
+}
+
+.MuiDayPicker-weekContainer {
+  // for the days  numbers
+  justify-content: space-between !important;
+}
+.css-1ram4vc {
+  height: 4rem !important;
+  width: 5rem !important;
+}
+.css-vrxgo3-MuiPickersDay-root {
+  height: 4rem !important;
+  width: 5rem !important;
+}
+.css-1wvgxus-MuiCalendarPicker-viewTransitionContainer {
+  //   for div hold days name and numbers
+  padding: 0px 6px !important;
+  overflow-y: hidden !important;
+  div:first-child {
+    // overflow-y: scroll;
+    max-height: 307px;
+  }
+  @include lt-md {
+    padding: 0px !important;
+  }
+}
+
+//   -----------------------------------------------------------------------------------
+// the arrows of change monthes
+[dir="rtl"] .MuiPickersArrowSwitcher-root {
+  button.MuiButtonBase-root.MuiIconButton-root {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+// this style applied for the hidden days
+.css-188yni7-MuiPickersDay-root,
+.css-t0gkw9-MuiPickersDay-root {
+  width: 5rem !important;
+  height: 4rem !important;
+}
+// color of days number and font
+button.css-bkrceb-MuiButtonBase-root-MuiPickersDay-root {
+  font-weight: $font-semibold;
+  font-size: $b-lg-font;
+  color: #494e50;
+  width: 5rem !important;
+  height: 4rem !important;
+}
+//   when days are disabled from the code
+button.css-bkrceb-MuiButtonBase-root-MuiPickersDay-root[disabled] {
+  color: $grey-500 !important;
+}
+//   for the default selected day
+.css-195y93z-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+  font-weight: $font-semibold;
+  font-size: $b-lg-font;
+  color: $white !important;
+  background: $main-normal !important;
+  border-radius: $radius-normal !important;
+  width: 5rem !important;
+  height: 4rem !important;
+}
+//   for the default selected day
+.css-195y93z-MuiButtonBase-root-MuiPickersDay-root:not(.Mui-selected) {
+  font-weight: $font-semibold;
+  font-size: $b-lg-font;
+  width: 5rem !important;
+  height: 4rem !important;
+}
+//   for the default selected day
+.css-195y93z-MuiButtonBase-root-MuiPickersDay-root:not(.Mui-selected) {
+  border-radius: $radius-normal !important;
+}
+//   keep color of selected day white inside the circle selection
+.css-bkrceb-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+  color: $white !important;
+  background: $main-normal !important;
+  border-radius: $radius-normal !important;
+}
+//   when hover on the days
+.css-bkrceb-MuiButtonBase-root-MuiPickersDay-root:hover {
+  border-radius: $radius-normal !important;
+}
+
+.time {
+  margin: 3rem 0rem;
+  max-height: 500px;
+  overflow: hidden auto;
+  &-available {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    width: 100%;
+    background: unset;
+    border: unset;
+    border-bottom: 1px solid #edf2f7;
+    color: $grey-900;
+    position: relative;
+    .loader-holder {
+      min-height: 20px;
+      min-width: 25px;
+      position: relative;
+      justify-content: center;
+      .loading {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+      }
+    }
+    &_slot {
+      font-weight: $font-semibold;
+      font-size: $b-lg-font;
+      &-next--day {
+        color: $main-normal;
+      }
+    }
+    &:hover {
+      color: $main-normal !important;
+    }
+  }
+}
+
+.closed {
+  margin: 3rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  &-day--closed {
+    font-weight: 700;
+    font-size: 16px;
+    color: #1a202c;
+  }
+  &-day--book {
+    font-weight: 500;
+    font-size: 16px;
+    color: #4a5568;
+  }
+  &-btn {
+    width: 40%;
+  }
+}
+
+.close--open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-picker {
+    width: 100%;
+    overflow: hidden;
+    transition-property: max-height;
+    transition-duration: 0.1s;
+    height: 307px !important;
+  }
+  &-arrow {
+    cursor: pointer;
+    margin-top: 10px;
+  }
+}
+// new style for picker
+.css-1brzq0m {
+  width: 100% !important;
+}
+// the days of calendar
+button.css-ub1r1 {
+  font-weight: 600 !important;
+  font-size: 1.6rem !important;
+  color: #494e50 !important;
+  width: 5rem !important;
+  height: 4rem !important;
+}
+
+// padding for arrows
+.PrivatePickersFadeTransitionGroup-root.MuiCalendarPicker-viewTransitionContainer.css-5c7sx6 {
+  padding: 0px 45px !important;
+  overflow: hidden !important;
+}
+
+// week labels
+span.css-10qkmc3 {
+  font-weight: 500 !important;
+  font-size: 1.6rem !important;
+  letter-spacing: 0.3px !important;
+  color: #4a5568 !important;
+  width: 5rem !important;
+  height: 4rem !important;
+}
+
+span.css-raiqh1-MuiTypography-root-MuiDayPicker-weekDayLabel {
+  font-weight: 500 !important;
+  font-size: 1.6rem !important;
+  letter-spacing: 0.3px !important;
+  color: #4a5568 !important;
+  width: 5rem !important;
+  height: 4rem !important;
+}
+
+// disabled days
+.css-ub1r1.Mui-disabled {
+  color: #e2e8f0 !important;
+}
+
+// default selected day
+.css-wed0tz.Mui-selected {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #fff !important;
+  background: #a12b94 !important;
+  border-radius: 8px !important;
+  width: 5rem !important;
+  height: 4rem !important;
+}
+// default day not selected{
+.css-wed0tz:not(.Mui-selected) {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  font-weight: 600;
+  font-size: 1.6rem;
+  width: 5rem !important;
+  height: 4rem rem !important;
+  border-radius: 8px !important;
+}
+// days outside the month  not shown
+.css-1f3kfmk {
+  width: 5rem !important;
+  height: 4rem !important;
+}
+
+// body of calendar
+.css-5c7sx6 {
+  //   overflow: hidden !important;
+  padding: 0px 45px !important;
+  height: auto !important;
+  @include lt-md {
+    padding: 0px !important;
+  }
+}
+
+// years  numbers
+.css-m1gykc {
+  font-weight: 600 !important;
+  font-size: 1.6rem !important;
+  color: #494e50 !important;
+}
+.Mui-disabled {
+  color: rgb(0 0 0 / 22%) !important;
+}
+
+.css-epd502 {
+  max-height: unset !important;
+}
+// new selected day
+.css-ub1r1.Mui-selected {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #fff !important;
+  background: #a12b94 !important;
+  border-radius: 8px !important;
+  width: 5rem !important;
+  height: 4rem !important;
+}
+
+.css-h6iofx {
+  height: 300px !important;
+  overflow: hidden scroll !important;
+}
+
+.css-ub1r1:hover {
+  border-radius: 8px !important;
+}

@@ -1,0 +1,30 @@
+@import "./../../../Sass/variables";
+
+.square-bg {
+  img {
+    width: 48px;
+    height: 48px;
+    background-color: $grey-100;
+    border-radius: $radius-normal;
+  }
+}
+
+.round-bg {
+  img {
+    width: 48px;
+    height: 48px;
+    background-color: $white;
+    border-radius: 50%;
+    border: 1px solid $grey-300;
+  }
+}
+
+.user-icon {
+  img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid $white;
+    background-color: $main-normal;
+  }
+}

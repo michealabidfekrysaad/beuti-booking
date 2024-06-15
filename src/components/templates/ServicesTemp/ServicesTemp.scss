@@ -1,0 +1,39 @@
+@import "./../../../Sass/variables";
+@import "./../../../Sass/mediaQuery";
+
+.servicestemp {
+  margin-top: 70px;
+  @include lt-sm {
+    margin-top: 85px;
+  }
+  &-header {
+    color: $grey-900;
+    font-weight: $font-bold;
+    font-size: $h-md-font;
+    margin-bottom: 16px;
+  }
+}
+
+.disabled-salon {
+  .invoice {
+    top: 135px;
+  }
+  .views {
+    margin-top: 200px !important;
+    .selectserviceheader {
+      top: 135px;
+    }
+  }
+  .alert-danger {
+    position: fixed;
+    top: 72px;
+    z-index: 101;
+    right: 0;
+    left: 0;
+    background-color: rgb(255 232 231);
+    border-radius: 0;
+  }
+  .scrollHelper {
+    top: 100px;
+  }
+}

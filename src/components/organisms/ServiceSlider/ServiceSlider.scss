@@ -1,0 +1,43 @@
+@import "./../../../Sass/variables";
+.serviceslider {
+  div {
+    min-height: 35px;
+    max-height: 35px;
+  }
+  .MuiTab-root {
+    // height: 45px;
+    border-radius: 8px;
+    background: #f7fafc;
+    margin-right: 4px;
+    color: #1a202c;
+    font-weight: 600;
+    margin-left: 4px;
+    text-transform: capitalize;
+    font-size: $b-md-font;
+    padding: 8px 16px;
+    min-height: 35px;
+    max-height: 35px;
+  }
+  .MuiTab-root.Mui-selected {
+    background: #a12b94;
+    color: #fff;
+    min-height: 35px;
+    max-height: 35px;
+  }
+  .MuiTabs-indicator {
+    background-color: unset;
+    min-height: 35px;
+    max-height: 35px;
+  }
+  .MuiSvgIcon-root {
+    background-color: #f7fafc;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+  .Mui-disabled.MuiTabs-scrollButtons {
+    display: none;
+    min-height: 35px;
+    max-height: 35px;
+  }
+}

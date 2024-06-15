@@ -1,0 +1,62 @@
+@import "../../../Sass/variables";
+@import "../../../Sass/mediaQuery";
+
+.footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background: $white;
+  box-shadow: 0px 4px 40px rgba(181, 183, 196, 0.5);
+  height: 60px;
+  padding: 24px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &_data {
+    &-title {
+      font-weight: $font-bold;
+      font-size: $h-sm-font;
+      color: $grey-900;
+    }
+    &-sub-title {
+      font-weight: $font-semibold;
+      font-size: $b-lg-font;
+      color: $grey-600;
+    }
+  }
+  &_btn {
+    button {
+      width: 262px;
+    }
+  }
+}
+
+@include sm {
+  .footer {
+    padding: 24px 50px;
+  }
+}
+@include lt-sm {
+  .footer {
+    padding: 0px 20px;
+    &_data {
+      &-title {
+        font-weight: $font-bold;
+        font-size: $h-xxs-font;
+        color: $grey-900;
+      }
+      &-sub-title {
+        font-weight: $font-semibold;
+        font-size: $b-sm-font;
+        color: $grey-600;
+      }
+    }
+    &_btn {
+      button {
+        width: 144px;
+        word-break: break-all;
+      }
+    }
+  }
+}

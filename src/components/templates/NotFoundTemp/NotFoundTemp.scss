@@ -1,0 +1,15 @@
+@import "../../../Sass/variables";
+
+.not-found {
+  height: calc(100vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &__hint {
+    color: $grey-600;
+    padding: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+}

@@ -1,0 +1,106 @@
+@import "./../../../Sass/variables";
+.beutiselect {
+  position: relative;
+  margin-bottom: 18px;
+  &-label {
+    color: #787878;
+    font-weight: 500;
+  }
+  &-dropdown {
+    display: block;
+    // font-family: 'Cairo' !important;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #d1d5db;
+    padding: 10px 0px;
+    height: 45px;
+    background-color: white;
+    box-sizing: border-box;
+    margin-bottom: 0.25rem;
+    line-height: 20px !important;
+    font-size: $b-lg-font !important;
+    &--item {
+      font-size: $b-lg-font !important;
+    }
+  }
+  .MuiInputBase-input.MuiInput-input {
+    border: none;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .MuiOutlinedInput-notchedOutline {
+    border: none;
+  }
+  .MuiSelect-nativeInput {
+    font-size: $b-lg-font;
+  }
+}
+// give select the same disable color for input
+.MuiInputBase-root.Mui-disabled {
+  cursor: default;
+  background-color: rgba(239, 239, 239, 0.3) !important;
+  border-color: rgba(118, 118, 118, 0.3);
+}
+
+.beuti-textarea__field {
+  height: auto;
+  padding: unset;
+  resize: none;
+  padding: 15px;
+  height: 100px;
+}
+
+.error-border {
+  border-color: #e76363 !important;
+  color: #e76363 !important;
+  -webkit-box-shadow: 0px 1px 2px #e76363 !important;
+  box-shadow: 0px 1px 2px #e76363 !important;
+}
+
+.beuti-input__field .MuiInputBase-root {
+  height: 45px;
+  .MuiInputBase-input.MuiInput-input {
+    height: 45px;
+    border: 1px solid #d1d5db;
+    padding: 0 15px !important;
+    box-sizing: border-box;
+    &:focus {
+      outline: none;
+      color: #a82f96;
+      -webkit-box-shadow: 0px 1px 2px #a82f96;
+      box-shadow: 0px 1px 2px #a82f96;
+      border-color: #a82f96;
+      border: 1px solid #a82f96;
+    }
+  }
+}
+.beuti-input__field
+  .MuiInput-underline.Mui-error
+  .MuiInputBase-input.MuiInput-input {
+  border-color: #e76363;
+  border: 1px solid #e76363;
+}
+label {
+  cursor: pointer;
+}
+.beuti-date-range-input {
+  .beuti-range-picker {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+
+    border: 1px solid #d1d5db;
+    height: 45px;
+    padding: 0 13px;
+    border-radius: 5px;
+    margin-bottom: 0.25rem;
+    width: 100%;
+    &:focus {
+      outline: none;
+      color: $main-normal;
+      box-shadow: 0px 1px 2px $main-normal;
+
+      border-color: $main-normal;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+@import "../../../Sass/variables";
+
+.intro {
+  //   padding: 70px;
+  &-header {
+    margin-bottom: 0px;
+    color: $grey-600;
+    font-size: $b-md-font;
+    font-weight: $font-medium;
+  }
+  &-title {
+    margin-bottom: 0px;
+    color: $grey-900;
+    font-weight: $font-bold;
+    font-size: $h-lg-font;
+  }
+  &-address {
+    margin-bottom: 0px;
+    font-weight: $font-medium;
+    font-size: $b-lg-font;
+  }
+  &-opened {
+    display: flex;
+    align-items: center;
+    &-label {
+      padding: 0rem 0.5rem;
+      color: $success-more-dark;
+    }
+  }
+  &-rating {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-top: 10px;
+    &_number {
+      text-decoration: underline;
+      color: $grey-700;
+      font-weight: $font-medium;
+    }
+  }
+  &-description {
+    font-weight: $font-regular;
+    font-size: $b-md-font;
+    color: $grey-700;
+  }
+  &-image {
+    &_heart {
+      background: none;
+      border: none;
+      outline: none;
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      max-width: 25px;
+    }
+    &_share {
+      background: none;
+      border: none;
+      outline: none;
+      position: absolute;
+      top: 5%;
+      right: 13%;
+      max-width: 25px;
+    }
+    .carousel-indicators {
+      margin-bottom: 3rem !important;
+      button {
+        border-radius: 50%;
+        color: red;
+        background-color: transparent;
+        border: 1px solid $white;
+        width: 12px;
+        height: 12px;
+      }
+      button.active {
+        border-radius: 50%;
+        color: red;
+        background-color: $white;
+        width: 12px;
+        height: 12px;
+      }
+    }
+    a[class*="carousel-control-"] {
+      display: none !important;
+    }
+  }
+}

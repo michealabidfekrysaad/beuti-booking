@@ -1,0 +1,18 @@
+@import "./../../../Sass/variables";
+
+.pricelabel {
+  display: flex;
+  align-items: flex-end;
+  &_old {
+    color: $grey-600;
+    font-weight: $font-medium;
+    text-decoration: line-through;
+    font-size: $b-md-font;
+    margin: 0px 16px;
+  }
+  &_new {
+    color: $main-normal;
+    font-weight: $font-bold;
+    font-size: $b-lg-font;
+  }
+}

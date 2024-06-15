@@ -1,0 +1,15 @@
+@import "./../../../Sass/variables";
+
+.holder-icon {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  label {
+    font-size: $b-sm-font;
+    color: $grey-900;
+    font-weight: $font-regular;
+    text-align: center;
+    word-break: break-all;
+  }
+}

@@ -1,0 +1,66 @@
+@import "../../../Sass/variables";
+@import "../../../Sass/mediaQuery";
+
+.beuti-modal {
+  &_body {
+    &-label {
+      font-weight: $font-semibold !important;
+      font-size: $b-lg-font !important;
+      color: $grey-900 !important;
+    }
+    &-compainion-place {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    &-data {
+      margin-top: 5px;
+      padding: 8px 16px;
+      background: $grey-100;
+      border-radius: $radius-normal;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 55px;
+      &_city {
+        font-weight: $font-semibold;
+        font-size: $b-lg-font;
+        color: $grey-900;
+      }
+      &_has-price {
+        font-weight: $font-bold;
+        font-size: $b-lg-font;
+        color: $main-normal;
+      }
+      &_no-price {
+        font-weight: $font-bold;
+        font-size: $b-lg-font;
+        color: $grey-500;
+      }
+    }
+  }
+}
+
+@include lt-md {
+  .beuti-modal {
+    div.modal-content {
+      width: 90% !important;
+      margin: auto;
+      min-width: unset !important;
+    }
+    &_header {
+      &-title {
+        font-size: $h-sm-font;
+      }
+      &-sub-title {
+        font-size: $b-sm-font;
+      }
+    }
+    &_body {
+      max-height: 400px;
+      .mb-md {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

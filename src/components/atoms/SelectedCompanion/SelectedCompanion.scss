@@ -1,0 +1,42 @@
+@import "../../../Sass/variables";
+
+.companion {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  min-width: 80px;
+  height: 40px;
+  background: $grey-100;
+  border: 1px solid $grey-300;
+  border-radius: $radius-normal;
+  align-items: center;
+  padding: 7px;
+  &_checkbox {
+    width: 21px;
+    height: 21px;
+    .roundcheckBox__wrapper {
+      width: 21px !important;
+      height: 21px !important;
+      input[type="checkbox"] {
+        width: 21px !important;
+        height: 21px !important;
+      }
+      label {
+        width: 21px !important;
+        height: 21px !important;
+      }
+      label:after {
+        height: 6px !important;
+        left: 4px !important;
+        position: absolute;
+        top: 4px !important;
+        width: 10px !important;
+      }
+    }
+  }
+  &_name {
+    font-weight: $font-regular;
+    font-size: $b-lg-font;
+    color: $grey-700;
+  }
+}

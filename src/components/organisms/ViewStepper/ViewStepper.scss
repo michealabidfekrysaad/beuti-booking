@@ -1,0 +1,40 @@
+@import "./../../../Sass/variables";
+@import "./../../../Sass/mixins";
+.viewstepper {
+  background-color: $grey-100;
+  position: fixed;
+
+  right: 0;
+  left: 0;
+  top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 65px;
+  font-weight: $font-semibold;
+  z-index: 100;
+  &_name {
+    margin-bottom: 0px;
+    color: $grey-900;
+    font-size: $h-sm-font;
+    display: flex;
+    button {
+      background: none;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+    svg {
+      @include margin-end(8px);
+    }
+  }
+  &_step {
+    color: $grey-700;
+    font-size: $h-sm-font;
+
+    &__count {
+      color: $main-normal;
+    }
+  }
+}

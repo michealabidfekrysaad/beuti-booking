@@ -1,0 +1,32 @@
+@import "./../../../Sass/variables";
+@import "./../../../Sass/mixins";
+.beutiaccordion {
+  .accordion-item {
+    overflow: hidden;
+    border-radius: $radius-normal;
+    border: 1px solid $grey-300;
+    padding: 24px;
+  }
+
+  .accordion-body {
+    @include padding-start(61px);
+  }
+  .accordion-button {
+    box-shadow: none;
+    background-color: $white;
+    padding: 0 !important;
+    font-size: $b-lg-font;
+  }
+  .accordion-button:not(.collapsed) {
+    color: unset !important;
+    .beutiaccordion_header-title_arrow svg {
+      transform: rotate(180deg);
+    }
+  }
+  .priceoption {
+    margin-bottom: 12px;
+  }
+  .accordion-button::after {
+    display: none;
+  }
+}

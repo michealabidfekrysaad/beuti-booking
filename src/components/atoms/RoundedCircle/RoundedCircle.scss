@@ -1,0 +1,17 @@
+@import "./../../../Sass/variables";
+
+.round {
+  width: 65px;
+  height: 65px;
+  background-color: #edf2f7;
+  border-radius: 100px;
+  overflow-wrap: anywhere;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-img {
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+  }
+}

@@ -1,0 +1,173 @@
+@import "../../../Sass/variables";
+@import "../../../Sass/mixins";
+@import "../../../Sass/mediaQuery";
+
+.checkout {
+  .invoice {
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    z-index: 1;
+    width: calc(33.33% - 75px);
+    top: 68px;
+    @include position(75px);
+    &-main {
+      background-color: $white;
+      box-shadow: 0px 10px 30px rgba(46, 58, 89, 0.05);
+      padding: 18px 12px 0px 12px;
+      border-radius: 16px;
+      &_body {
+        &-header {
+          display: flex;
+          gap: 18px;
+          &_img {
+            background-color: $white;
+            width: 80px;
+            min-width: 80px;
+            height: 80px;
+            border: 1px solid #f1f1f1;
+            border-radius: 13px;
+            padding: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          &_details {
+            &-title {
+              font-weight: $font-bold;
+              font-size: $h-sm-font;
+              color: $grey-900;
+              @include lg {
+                font-size: $h-sm-font;
+              }
+              @include md {
+                font-size: $h-sm-font;
+              }
+            }
+            &-address {
+              font-weight: $font-medium;
+              font-size: $b-md-font;
+              color: $grey-900;
+              @include lg {
+                font-size: $b-sm-font;
+              }
+              @include lg {
+                font-size: $b-sm-font;
+              }
+            }
+            &-city {
+              button {
+                background: none;
+                color: $main-normal;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid $main-normal;
+                font-weight: $font-semibold;
+                font-size: $b-lg-font;
+                &:hover {
+                  opacity: 0.8;
+                }
+              }
+            }
+          }
+        }
+        &-summary {
+          padding-top: 20px;
+          &_dahsed {
+            padding-bottom: 10px;
+            border-top: 1px dashed $grey-300;
+            width: 100%;
+          }
+          &_title {
+            font-weight: $font-semibold;
+            font-size: $b-lg-font;
+            color: $grey-900;
+            padding-bottom: 10px;
+          }
+          &_service {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            align-items: flex-start;
+            &-info {
+              display: flex;
+              flex-direction: column;
+              gap: 3px;
+              &_name {
+                font-weight: $font-medium;
+                font-size: $b-md-font;
+                color: $grey-900;
+              }
+              &_details {
+                font-weight: $font-regular;
+                font-size: $b-md-font;
+                color: $grey-700;
+              }
+            }
+            &-price {
+              font-weight: $font-medium;
+              font-size: $b-md-font;
+              color: $grey-900;
+              display: flex;
+              justify-content: flex-end;
+              flex-direction: column;
+              &_old {
+                font-weight: $font-medium;
+                font-size: $b-sm-font;
+                color: $grey-600;
+                text-decoration: line-through;
+              }
+            }
+          }
+        }
+      }
+    }
+    &-total {
+      background-color: $white;
+      box-shadow: 0px 10px 30px rgba(46, 58, 89, 0.05);
+      padding: 10px 19px;
+      border-radius: 16px;
+      &_holder {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0px;
+        &-word {
+          font-weight: $font-semibold;
+          font-size: $b-lg-font;
+          color: $grey-900;
+        }
+        &-price {
+          font-weight: $font-semibold;
+          font-size: $b-lg-font;
+          color: black;
+        }
+      }
+    }
+    &_services {
+      max-height: 28vh;
+      min-height: 28vh;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      &::-webkit-scrollbar-thumb {
+        background-color: $grey-600;
+      }
+      @include padding-end(5px);
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+    }
+  }
+
+  .scroll {
+    min-height: auto;
+    max-height: 18vh;
+    overflow: auto;
+    &::-webkit-scrollbar-thumb {
+      background-color: $grey-600;
+    }
+    @include padding-end(5px);
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+  }
+}
